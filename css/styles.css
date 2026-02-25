@@ -1,4 +1,105 @@
+/* reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: blue;
-    font font-family: sans-serif;
+    background: linear-gradient(to bottom, #f8f8f8, #ddd);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: #fff;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.125rem;
+    color: #666;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* menu list layout */
+#menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0;
+}
+
+#menu li {
+    flex: 1 1 300px;
+    max-width: 360px;
+}
+
+#menu article {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#menu figure {
+    margin: 0;
+}
+
+#menu img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#menu h3 {
+    margin: 0.75rem 1rem 0;
+    font-size: 1.25rem;
+}
+
+#menu p {
+    margin: 0.5rem 1rem;
+}
+
+#menu p strong {
+    font-weight: 700;
+}
+
+#menu article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+footer address {
+    font-style: normal;
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
 }
